@@ -7,4 +7,5 @@ train = pd.read_csv('candidate_by_gender_training.csv')
 
 train.head()
 
+sns.set_style('whitegrid')
 sns.countplot(x='candidate',hue='gender',data=train,palette='RdBu')
